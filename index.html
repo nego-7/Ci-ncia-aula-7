@@ -15,5 +15,33 @@
       <input type="password" id="isenha" name="lname" value=""><br><br>
       <input type="submit" value="Entrar">
     </form>  
+    <p id="demo">Isso irá mudar para "Olá" quando você clicar no botão.</p>
+    
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Olá!"'>Click Me!</button>
+  
+   <!---- <p id="hour">Good Evening!</p> -->
+    <!--<script>
+        if (new Date().getHours() < 22) {
+          document.getElementById("hour").innerHTML = "Good day!"; 
+    } -->
+
+
+        </script>
+
+
+        <p id="aula 7"></p>
+        <script>
+            const time = new Date().getHours();
+            let greeting;
+            if (time < 10) {
+              greeting = "Good morning";
+            } else if (time < 20) {
+              greeting = "Good day";
+            } else {
+              greeting = "Good evening";
+            }
+            document.getElementById("aula 7").innerHTML = greeting;
+            </script>
+
 </body>
 </html>
